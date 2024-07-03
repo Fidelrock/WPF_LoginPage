@@ -19,15 +19,15 @@
         <Border CornerRadius="12" BorderThickness="0" Opacity="0.95" Margin="20">
             <Border.BorderBrush>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#462AD8" Offset="0"/>
-                    <GradientStop Color="#DA34AE" Offset="0.75"/>
-                    <GradientStop Color="#8A16C1" Offset="1"/>
+                    <GradientStop Color="{StaticResource winBorderColor1}" Offset="0"/>
+                    <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.75"/>
+                    <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
                 </LinearGradientBrush>
             </Border.BorderBrush>
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Color="#060531" Offset="0"/>
-                    <GradientStop Color="#1B1448" Offset="0.75"/>
+                    <GradientStop Color="{StaticResource PrimaryBackColor1}" Offset="0"/>
+                    <GradientStop Color="{StaticResource PrimaryBackColor2}" Offset="0.75"/>
                 </LinearGradientBrush>
             </Border.Background>
             <Grid>
@@ -42,7 +42,7 @@
                         <ColumnDefinition Width="25"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="LOG IN" Foreground="DarkGray" FontSize="10" FontFamily="Montserrat" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                    <Button Name="btnMinimize" BorderThickness="0" Content="-" Foreground="White" FontSize="16" FontFamily="Montserrat" Cursor="Hand" Grid.Column="1" Click="btnMinimize_Click">
+                    <Button Name="btnMinimize" BorderThickness="0" Content="-" Foreground="White" FontSize="16" FontFamily="Montserrat" Cursor="Hand" Grid.Column="1" Click="btnMinimize_Click" HorizontalAlignment="Left" Width="25">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#28AEED"/>
